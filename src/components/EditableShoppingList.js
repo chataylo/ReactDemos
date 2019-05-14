@@ -10,7 +10,7 @@ export default function ShoppingList() {
   return (
     <div className="ShoppingList">
       <b> ShoppingList: </b> <br/>
-      {
+      { 
         list.map((item, i) => {
           if(i != editing){
             return (
