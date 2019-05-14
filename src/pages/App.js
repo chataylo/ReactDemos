@@ -1,13 +1,12 @@
 import React from 'react';
 import logo from '../images/logo.svg';
-import '../style/App.css';
-import EditableShoppingList from '../components/EditableShoppingList'
+import '../styles/App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <EditableShoppingList />
+        Example React Page
       </header>
     </div>
   );

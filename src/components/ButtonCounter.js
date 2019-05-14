@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+// First example.
+
+// A simple component which has a state and a button
 export default function ButtonCounter() {
 
   // useState is a Hook.  It is a function called inside
