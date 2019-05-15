@@ -7,7 +7,7 @@ import ButtonCounter from '../components/ButtonCounter'
 import EditableShoppingList from '../components/EditableShoppingList'
 
 function FriendsListPage() {
-
+ 
   const isConnected = useFacebookConnect();
 
   const [ profileInfo, promptLogin ] = useFacebookLogin( isConnected );
