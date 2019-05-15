@@ -1,29 +1,12 @@
-.darkPage {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 1vmin);
-  color: white;
 
-  .shoppingList {
+.shoppingList {
+  margin: 20px;
 
-    .listItem{
-
-    }
+  .listItem {
+    margin: 10px;
   }
-}
 
-.lightPage {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 1vmin);
-
-  .shoppingList {
-    
-    .listItem{
-
-    }
+  .listAdd {
+    display: inline;
   }
 }
