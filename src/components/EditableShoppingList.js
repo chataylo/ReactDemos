@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import EditableListItem from './EditableListItem'
+import '../styles/EditableShoppingList.scss'
+import '../styles/EditableListItem.scss'
 
 export default function EditableShoppingList(props) {
   const { editable } = props;
@@ -8,8 +10,8 @@ export default function EditableShoppingList(props) {
   const [list, setList] = useState([]);
 
   return (
-    <div className="shoppingList">
-      <b> ShoppingList: </b> <br/>
+    <div className="EditableShoppingList">
+      <div className="title"> ShoppingList: </div>
       {
         list.map((item, i) => {
           if(editable){
@@ -23,7 +25,7 @@ export default function EditableShoppingList(props) {
               }}
             />
           } else {
-            return <div className="listItem" key={i}>
+            return <div className="EditableListItem" key={i}>
               {item}
             </div>
           }
@@ -37,7 +39,7 @@ export default function EditableShoppingList(props) {
         onChange={event => setText(event.target.value)}
       />
 
-      <div className="listAdd">
+      <div className="addItem">
         { text != "" &&
           <button onClick={() => {
             setList(list.concat(text));

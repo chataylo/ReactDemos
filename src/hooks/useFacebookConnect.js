@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 export default function useConnectFacebook(){
-  
+
   const [ isConnected, setIsConnected ] = useState(false);
 
   function connectToFacebook(){
@@ -26,6 +26,8 @@ export default function useConnectFacebook(){
 
   useEffect(() => {
     connectToFacebook();
+
+    // return unConnectToFacebook;
   });
 
   return isConnected;

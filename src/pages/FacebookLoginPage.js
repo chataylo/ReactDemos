@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../images/logo.svg';
-import '../styles/ShoppingList.scss';
+import '../styles/FacebookLoginPage.scss';
 import useFacebookConnect from '../hooks/useFacebookConnect'
 import useFacebookLogin from '../hooks/useFacebookLogin'
-import ButtonCounter from '../components/ButtonCounter'
 import EditableShoppingList from '../components/EditableShoppingList'
+import ButtonCounter from '../components/ButtonCounter'
 
 function FriendsListPage() {
- 
+
   const isConnected = useFacebookConnect();
 
   const [ profileInfo, promptLogin ] = useFacebookLogin( isConnected );
 
   return (
-    <div className="facebookPage">
+    <div className="FacebookLoginPage">
+      
       <div className="title">
         Facebook Page
       </div>
